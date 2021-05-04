@@ -3,8 +3,7 @@ $(document).ready(function(){
    var timestamp=""; /*Registro temporal da ultima atualização*/
    var url_api="http://localhost/CIMOL/chat-api/api/";
    timestamp = new Date().getTime();
-   console.log(1);
-   console.log(timestamp);
+   
    /*Evento botão acesso chat*/
    $("#btn-input-chat").click(function(){
    		/*Captura valor do campo input*/
