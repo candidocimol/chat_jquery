@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+	<!--
+	Este projeto é um simples aplicativo de troca de mensagens, 
+	utilizando como frontend bootstrap e Jquery, 
+	e como backend um servidor PHP com banco de dados MySQL.
+	Projeto apresentado como exemplo nas aulas de criação de site do CIMOL
+	  -->
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" />
+		<title>Criação de Sites</title>
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="./css/style.css" rel="stylesheet" />
+		<script src="https://code.jquery.com/jquery-3.4.1.js"> </script>
+		<script src="./js/script.js"> </script>
+	</head>
+	<body>
+
+		<main >
+			<!-- Cabeçalho exibido em toda o aplicativo  -->
+			<div class="card text-white bg-info mb-3 ">
+			  <div class="card-header" style="margin:0 auto">Chat</div>
+			  <div class="card-body" style="margin:0 auto">
+			    <h5 class="card-title" >Chat da Info</h5>
+			    <p class="card-text">Este é um simples aplicativo de troca de mensagens.</p>
+			  </div>
+			</div>
+			<!-- Tela de entrada, onde o usuário informa apelido utilizado nas conversas -->
+			<div id="input-chat" class="row container">
+				<div style="margin:0 auto">
+					<div class="form-row align-items-center">
+						<div class="col-auto">
+  								<label class="sr-only" for="inlineFormInput">Nick</label>
+  								<input type="text" class="form-control mb-2" id="input-nick" placeholder="Nick">
+						</div>
+						<div class="col-auto">
+      						<button type="submit" id="btn-input-chat"class="btn btn-primary mb-2">Entrar</button>
+    					</div>
+					</div>
+				</div>
+			</div>
+			<!-- Tela de mensagens -->
+			<div id="msg-chat" class="row container" >
+				<div class="alert alert-secondary" role="alert" id="nick-show" style="margin:0 auto">
+					
+				</div>
+				<div class="overflow-auto border border-primary" id="msg-show" style="height: 300px; width:80%; margin:0 auto">
+					
+				</div>
+				<div class="input-group mb-3">
+					<input type="hidden" name="from"  id="chat-msg-nick"  >
+  					<input type="text" class="form-control" placeholder="Sua mensagem" name="message" id="chat-msg" >
+  					<div class="input-group-append">
+    					<button class="btn btn-outline-secondary" type="button" id="btn-send-msg">>>></button>
+  					</div>
+				</div>
+		
+			</div>
+
+		</main>
+
+	</body>
+
+</html>
